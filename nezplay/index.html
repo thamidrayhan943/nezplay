@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" id="noscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play awesome games on NEZPLAY! Unblocked and ready to play.">
+    <meta name="keywords" content="games, online games, unblocked games, roblox, minecraft, play free">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>NEZ-PLAY</title>
+</head>
+<body>
+
+    <!-- Navbar Section --> 
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo" aria-label="Go to NEZ-PLAY Home">NEZ-PLAY</a>
+            <input type="text" class="search-bar" placeholder="Find your games..." aria-label="Search games">
+
+            <button class="menu-button" aria-label="Toggle menu">
+                <div class="menu-icon">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </button>
+
+            <div class="menu-content">
+    <div class="section-title">Welcome to your profile</div>
+
+    <div class="profile-section">
+        <img src="https://bestanimations.com/Animals/Mammals/Cats/catart/animated-cat-art-gif-26.gif" alt="User Avatar">
+        <div class="profile-info">
+            <h3>Preview</h3>
+            <p>Level: 1111 | XP: 95%</p>
+        </div>
+    </div>
+
+    <div class="interactive-section">
+        <div class="interactive-item">
+            <span class="label">Allow</span>
+            <div class="toggle-button" id="toggle-1">
+                <div class="toggle-circle"></div>
+            </div>
+        </div>
+
+        <div class="card">
+         <div class="interactive-item">
+
+            <div class="controls">
+                <label for="hue">Hue:</label>
+                <input type="range" id="hue" min="0" max="360" value="14">
+                <span id="val">30°</span>
+            </div>
+         </div>  
+        </div>
+
+        <div class="card">
+            <div class="interactive-item">
+                <span class="label">Leaderboard Rank</span>
+                <span class="value">#23</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="interactive-section">
+        <div class="interactive-item">
+            <span class="label">Coins Earned</span>
+            <span class="value" id="coin-counter">3,200</span>
+        </div>
+        <div class="interactive-item">
+            <span class="label">Achievements</span>
+            <span class="value">8/10</span>
+        </div>
+        <div class="interactive-item">
+            <span class="label">Daily Challenge</span>
+            <span class="value">Complete 5 games</span>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <p>&copy; 2024 NEZ-PLAY. All rights reserved.</p>
+        <a href="#" aria-label="Terms of Service">Terms of Service</a> |
+        <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+    </div>
+</div>
+
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Welcome to <span id="logo">NEZ-PLAY</span>!</h1>
+            <p>Pick a game and start playing.</p>
+        </section>
+
+        <div class="game-container">
+            <!-- Game templates will be dynamically added here -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 NEZ-PLAY. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

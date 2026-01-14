@@ -84,15 +84,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Theme Switcher Logic
-let slider = document.getElementById('hue');
-        let valDisplay = document.getElementById('val');
-        
-        slider.addEventListener('input', (e) => {
-            let h = e.target.value;
-            document.documentElement.style.setProperty('--h', h);
-            valDisplay.innerText = h + '°';
-        });
+// Theme Switcher 
+const slider = document.getElementById('hue');
+const valDisplay = document.getElementById('val');
+
+// 1. Function to apply color
+const updateHue = (h) => {
+    document.documentElement.style.setProperty('--h', h);
+    valDisplay.innerText = h + '°';
+    slider.value = h;
+};
+
+// 2. Loads saved color 
+const savedHue = localStorage.getItem('user-theme-hue');
+if (savedHue) {
+    updateHue(savedHue);
+}
+
+// 3. looks for changes and saves
+slider.addEventListener('input', (e) => {
+    const h = e.target.value;
+    updateHue(h);
+    localStorage.setItem('user-theme-hue', h);
+});
 
 
 let toggle = document.getElementById('toggle-1');
